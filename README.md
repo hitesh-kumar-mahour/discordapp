@@ -15,15 +15,13 @@
 
 ## Steps to create your own bot:
 
-1. Create a virtual environment -
-   `conda create --name <env> --file requirements.txt`
-2. activate virtual env - 
-   `activate <env>`
+1. Create a virtual environment with requirements.txt.
+2. activate created virtual env.
 3. Create your discord bot by visiting [developers console](https://discordapp.com/developers/applications)
 4. Create google [custom search api](https://developers.google.com/custom-search/v1/overview) credentials
 5. Create your **_PostgreSQL database_**
 6. Create the **_table 'searches'_** using the SQL query:
    `CREATE TABLE searches (user_id VARCHAR(256), keyword VARCHAR(256), search_time TIMESTAMP);`
-7. Update secret.env file.
+7. Create secret.env file with fields present in sample_secret_env.txt.
 8. Run the app -
    `python bot.py`
